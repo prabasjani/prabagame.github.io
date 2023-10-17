@@ -1,51 +1,51 @@
 const cardArray = [
     {
         name: 'fries',
-        img: '/fries.jpg'
+        img: 'fries.jpg'
     },
     {
         name: 'pizza',
-        img: '/pizza.jpg'
+        img: 'pizza.jpg'
     },
     {
         name: 'cheeseburger',
-        img: '/cheeseburger.jpg'
+        img: 'cheeseburger.jpg'
     },
     {
         name: 'hot-dog',
-        img: '/hot-dog.png'
+        img: 'hot-dog.png'
     },
     {
         name: 'milkshake',
-        img: '/milkshake.jpg'
+        img: 'milkshake.jpg'
     },
     {
         name: 'icecream',
-        img: '/ice-cream.jpeg'
+        img: 'ice-cream.jpeg'
     },
     {
         name: 'fries',
-        img: '/fries.jpg'
+        img: 'fries.jpg'
     },
     {
         name: 'pizza',
-        img: '/pizza.jpg'
+        img: 'pizza.jpg'
     },
     {
         name: 'cheeseburger',
-        img: '/cheeseburger.jpg'
+        img: 'cheeseburger.jpg'
     },
     {
         name: 'hot-dog',
-        img: '/hot-dog.png'
+        img: 'hot-dog.png'
     },
     {
         name: 'milkshake',
-        img: '/milkshake.jpg'
+        img: 'milkshake.jpg'
     },
     {
         name: 'icecream',
-        img: '/ice-cream.jpeg'
+        img: 'ice-cream.jpeg'
     }
 ]
 
@@ -60,7 +60,7 @@ let cardsWon = [];
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         const card = document.createElement('img');
-        card.setAttribute('src', '/blank.jpg');
+        card.setAttribute('src', 'blank.jpg');
         card.setAttribute('data-id', i);
         card.addEventListener('click', flipCard);
         gridDisplay.appendChild(card);
@@ -74,20 +74,20 @@ function checkMatch() {
     const optionTwoId = cardChoosenIds[1]
 
     if (optionOneId === optionTwoId) {
-        cards[optionOneId].setAttribute('src', '/blank.jpg')
-        cards[optionTwoId].setAttribute('src', '/blank.jpg')
+        cards[optionOneId].setAttribute('src', 'blank.jpg')
+        cards[optionTwoId].setAttribute('src', 'blank.jpg')
         alert('You click the same card');
     }
     if (cardChoosen[0] == cardChoosen[1]) {
         alert('You found a match');
-        cards[optionOneId].setAttribute('src', '/white.jpg')
-        cards[optionTwoId].setAttribute('src', '/white.jpg')
+        cards[optionOneId].setAttribute('src', 'white.jpg')
+        cards[optionTwoId].setAttribute('src', 'white.jpg')
         cards[optionOneId].removeEventListener('click', flipCard)
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardChoosen)
     }else{
-        cards[optionOneId].setAttribute('src', '/blank.jpg')
-        cards[optionTwoId].setAttribute('src', '/blank.jpg')
+        cards[optionOneId].setAttribute('src', 'blank.jpg')
+        cards[optionTwoId].setAttribute('src', 'blank.jpg')
         alert('Sorry try again!');
     }
     resultDisplay.textContent = cardsWon.length
