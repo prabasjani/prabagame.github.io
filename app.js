@@ -61,6 +61,7 @@ function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         const card = document.createElement('img');
         card.setAttribute('src', 'blank.jpg');
+        card.setAttribute('alt', '');
         card.setAttribute('data-id', i);
         card.addEventListener('click', flipCard);
         gridDisplay.appendChild(card);

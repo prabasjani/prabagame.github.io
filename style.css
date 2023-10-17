@@ -39,3 +39,24 @@ img{
     color: blueviolet;
     font-weight: bold;
 }
+
+@media (max-width:470px){
+    body{
+        padding: 0px 16px 0px 12px;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    h3{
+        font-size: 32px;
+        margin-bottom: 25px;
+        padding: 0px 16px 0px 12p;
+    }
+    #grid{
+        width: 400px;
+        height: 550px;
+    }
+    .footer{
+        position: relative;
+        top: 40px;
+    }
+}
