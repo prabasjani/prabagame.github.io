@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightpink;
+    width: 98%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 52px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+#result{
+    color: darkolivegreen;
+}
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+img{
+    width: 120px;
+    height: 120px;
+    margin: 6px;
+}
+.footer{
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+}
+.name{
+    color: blueviolet;
+    font-weight: bold;
+}
